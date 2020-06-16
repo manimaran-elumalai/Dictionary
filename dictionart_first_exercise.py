@@ -7,16 +7,16 @@ fruit = {
 }
 
 print(fruit)
-print(fruit["lime"])  # Lime is a key from dictionary fruit
-fruit["pearl"] = "an odd shaped apple"
-print(fruit['pearl'])
-fruit['pearl'] = "does'nt interest everyone"
-print(fruit['pearl'])
-# del(fruit['apple'])
-# del command is more powerful
-print(fruit)
-# print(fruit['tomoto'])
-# fruit.clear()
+# print(fruit["lime"])  # Lime is a key from dictionary fruit
+# fruit["pearl"] = "an odd shaped apple"
+# print(fruit['pearl'])
+# fruit['pearl'] = "does'nt interest everyone"
+# print(fruit['pearl'])
+# # del(fruit['apple'])
+# # del command is more powerful
+# print(fruit)
+# # print(fruit['tomoto'])
+# # fruit.clear()
 # print(fruit)
 
 # while True:
@@ -51,11 +51,15 @@ print(fruit)
 # for f in fruit:
 #     print(f + " : " + fruit[f])
 
-for val in fruit.values():
-    print(val)
-print("-----" * 15)
-for key in fruit:
-    print(fruit[key])
+# for val in fruit.values():
+#     print(val)
+# print("-----" * 15)
+# for key in fruit:
+#     print(fruit[key])
 
+fruit_keys = fruit.keys()
+print(fruit_keys)
 
+fruit["tomato"] = "not nice with ice cream"
+print(fruit_keys)
 
